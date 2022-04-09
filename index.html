@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body translate="no">
+    <!-- Start PreLoader -->
+    <div class="preload">
+        <div class="heart"></div>
+    </div>
+    <!-- End PreLoader -->
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="toggle-menu">
+                <span class="out"></span>
+                <span class="in"></span>
+                <span class="out"></span>
+            </div>
+            <div class="logo-icon">
+                <img src="assets/imgs/Red-logo.png" alt="Cura" class="logo" />
+            </div>
+            <div class="search-input">
+                <input type="text" name="ask" id="search-input" placeholder="Whats Wrong with your Pet!" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="assets/imgs/profile.png" alt="profile picture" />
+                </div>
+                <div class="profile-name">
+                    <span class="name">Ahmed Elhewala</span>
+                    <i class="fa-solid fa-caret-down caret"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Profile Menu -->
+    <section class="profile-pop">
+        <ul class="profilemenu">
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="#">Profile</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                <a href="#">Activity</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-gear"></i>
+                <a href="#">Setting</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#">Help</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="#">Log Out</a>
+            </li>
+        </ul>
+    </section>
+    <!-- End Profile Menu -->
+    <!-- Start Navbar -->
+    <nav>
+        <ul class="container">
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <a href="#">Emergency</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-heart-pulse"></i>
+                <a href="#">Health</a>
+                <ul class="megamenu">
+                    <li>
+                        <i class="fa-solid fa-comment-medical"></i>
+                        <a href="#">Consultation</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-capsules"></i>
+                        <a href="#">Medicines</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-notes-medical"></i>
+                        <a href="#">Instructions</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clipboard-question"></i>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa-solid fa-house-medical-circle-check"></i>
+                <a href="#">Care</a>
+                <ul class="megamenu">
+                    <li>
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <a href="#">Follow up</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrows-to-eye"></i>
+                        <a href="#">Assessment</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-road-circle-check"></i>
+                        <a href="#">Husbandry</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        <a href="#">Instructions</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-doctor"></i>
+                <a href="#">Vets</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <a href="#">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Options Box -->
+    <div class="option">
+        <div class="option-icon">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="option-box">
+            <span>Theme Color</span>
+            <ul class="color">
+                <li class="active" data-color="#c82222" data-logo="Red-logo.png" data-main="cura-red.png"></li>
+                <li data-color="#FB4E93" data-logo="Pink-logo.png" data-main="cura-pink.png"></li>
+                <li data-color="#00e57f" data-logo="Green-logo.png" data-main="cura-green.png"></li>
+                <li data-color="#04dede" data-logo="Blue-logo.png" data-main="cura-blue.png"></li>
+                <li data-color="#ffc107" data-logo="Yellow-logo.png" data-main="cura-yellow.png"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Options Box -->
+    <!-- Start Theme Box -->
+    <div class="theme light">
+        <i class="fa-solid fa-sun"></i>
+    </div>
+    <!-- End Theme Box -->
+    <!-- Start Go Up -->
+    <div class="go-up">
+        <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!-- End Go Up -->
+    <!-- Start Landing -->
+    <section class="landing">
+        <div class="container">
+            <h1>Let's take care of our animals <i class="fa-solid fa-heart"></i></h1>
+            <p>Because every life matters, including our animals lives and their health too.</p>
+            <p>We are here to help you take care your PET.</p>
+            <p>We hope we can help you with what you need.</p>
+            <a href="#">Want to adopt a PET?</a>
+        </div>
+    </section>
+    <!-- End Landing -->
+    <!-- Start Main Heading -->
+    <main>
+        <div class="container">
+            <img src="assets/imgs/cura-red.png" alt="Cura" class="logo" />
+            <h2>A Healthcare & Livelihood System</h2>
+            <p>We seek to make the way you treat and care your pet easier, and to put them in a healthier state too.</p>
+        </div>
+    </main>
+    <!-- End Main Heading -->
+    <!-- Start Emergency Section -->
+    <section class="emergency">
+        <h3 class="heading">Emergency</h3>
+        <div class="container">
+            <div class="emergency-note">
+                <p>Negligence in dealing with emergency situations in which your pet is exposed, such as fractures or burns, can lead to serious consequences, including death.</p>
+                <p>You must deal with these situations quickly and carefully, and it is recommended to communicate with a specialized veterinarian to deal properly.</p>
+            </div>
+            <div class="emergency-faq">
+                <div class="faq-box">
+                    <div class="faq-que open" data-answer=".ansone">
+                        A foreign body in your cat's throat
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="faq-ans ansone show">
+                        If you fear your cat has a foreign object trapped in the throat, visit a veterinarian right away. Depending on the size and location of the object, an esophageal or pharyngeal blockage can be a life-threatening condition Try to pull it out with tongs.
+                        If you cannot remove the stuck object with the forceps, Put your cat on your lap and try to get the object out by pressing on it
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-que" data-answer=".anstwo">
+                        Hamster colds
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="faq-ans anstwo">
+                        The main symptoms of colds in hamsters are difficulty breathing and sneezing from time to time. You may also notice a wet nose and sitting in a curved position, which is a clear indication that the animal is suffering from a disease. In order to protect
+                        hamsters from colds of all kinds, you must choose the appropriate place to put them away from inappropriate temperatures. The sick hamster should be given water that contains white honey and soft foods that are easy for him to
+                        chew, as well as milk mixed with water. Also, consult a veterinarian to describe Effective medicine for the treatment of hamsters. Also, you should not give the animal any human medicines without consulting a doctor.
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-que" data-answer=".ansthree">
+                        What do I do when my turtle gets burned by hot water?
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="faq-ans ansthree">
+                        Early stages: Redness and inflammation of the skin The appearance of water bubbles under the skin It is injured from the bottom of the shell and becomes soft and red in the back Late stages: Abstaining from food for long periods The tail becomes black,
+                        the legs become black and soft falling nails Quickly raise it from the water and put it in water of an appropriate temperature * not cold * free of chlorine ; Putting (povidone-iodine) or betadine on the body parts away from the
+                        eyes Only wash her head with chlorine-free water Put it in a dry bowl for 30 minutes, then wash all parts of its body except the eyes with chlorine-free water Put it in a bowl, add and dry
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-que" data-answer=".ansfour">
+                        Thermal burns to my dog
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="faq-ans ansfour">
+                        In the event of a thermal burn involving steam, boiling water, or fire, you can try placing 3 tea bags in a cup of hot water and then adding plenty of ice to cool it down and applying it with a cotton swab. • Before you take your dog to the vet, put a
+                        splint on the broken limb. If your dog sprains his wrist or ankle, apply a cold compress and take him to the vet. • Take a piece of cardboard or something hard and flat such as a pacifier stick and secure it to the cat's end with
+                        a bandage. You can stop minor bleeding by putting some gauze on the wound and something cold on top. In the case of profuse bleeding, make a tourniquet by wrapping a bandage tightly around the area above the wound.
+                    </div>
+                </div>
+            </div>
+            <div class="emergency-btns">
+                <a href="#">Have an emergency case</a>
+                <a href="#">Contact a veterinarian</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Emergency Section -->
+    <!-- Start Health Section -->
+    <section class="health">
+        <h3 class="heading">Health</h3>
+        <div class="container">
+            <div class="health-note">
+                <p>When you are in a less healthy state or feel sick, you can express it and quickly try to treat it before it gets worse.</p>
+                <p>But your pet can't do that, so we are here to help you deal with it and treat it when any symptoms appear.</p>
+            </div>
+            <div class="health-search">
+                <input type="search" name="disease-search" id="disease" placeholder="What's wrong with your pet?" />
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </div>
+            <div class="health-faq">
+                <span>Some FAQs</span>
+                <div class="faq-box">
+                    <div class="que-box open" data-case=".case-one">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="ans-box case-one show">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem.
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="que-box" data-case=".case-two">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="ans-box case-two">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="que-box" data-case=".case-three">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="ans-box case-three">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="faq-box" data-case=".case-four">
+                    <div class="que-box case-four">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="ans-box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae.
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="que-box" data-case=".case-five">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="ans-box case-five">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi.
+                    </div>
+                </div>
+                <div class="faq-box" data-case=".case-six">
+                    <div class="que-box">
+                        My dog can't move normally.
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="ans-box case-six">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Hic voluptates consequuntur quam, dolor odit modi consectetur molestiae, at quisquam sapiente, quaerat excepturi. Assumenda maiores, quam ipsa eaque doloremque blanditiis quidem.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Health Section -->
+    <!-- Start Care Section -->
+    <section class="care">
+        <h3 class="heading">Care</h3>
+        <div class="container">
+            <div class="care-box">
+                <i class="fa-solid fa-calendar-plus fa-3x"></i>
+                <h4>Follow Up</h4>
+                <p>If your pet is sick and on a treatment regimen, we can help guide you on how to monitor his condition, in:</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the proper way to follow up on his condition?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> How do you know if its condition is improving?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> How and when to give him medicine?
+                    </li>
+                </ul>
+            </div>
+            <div class="care-box">
+                <i class="fa-solid fa-arrows-to-eye fa-3x"></i>
+                <h4>Behavior Assessment</h4>
+                <p>If you have a pet and are having difficulty assessing and understanding its behaviour, we can help you with that, in:</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i> How can you assess a pet behavior?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the normal behavior of this pet?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What are the unusual cases and how to deal with?
+                    </li>
+                </ul>
+            </div>
+            <div class="care-box">
+                <i class="fa-solid fa-road-circle-check fa-3x"></i>
+                <h4>Husbandry Method</h4>
+                <p>Husbandry is always complicated, so if you are having difficulty raising your pet, we can help you with that, in:</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i> ًWhy you need a husbandry method?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the best method to husbandry a pet?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What behaviors should you avoid in husbandry?
+                    </li>
+                </ul>
+            </div>
+            <div class="care-box">
+                <i class="fa-solid fa-house-circle-check fa-3x"></i>
+                <h4>Lifestyle</h4>
+                <p>The lifestyle you live and the environment around you always affects you and your pet, we can help you with that, in:</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the best lifestyle for your pet to live in?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the best environment to put it in?
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> What is the right food for it?
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Health Section -->
+    <!-- Start Vets Section -->
+    <section class="vets">
+        <h3 class="heading">Veterinaries</h3>
+        <div class="container">
+            <div class="vet-content">
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet1.png" alt="Vet one" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Mahmoud Eldeeb</h4>
+                        <span>Emergency Specialist</span>
+                        <address>Egypt, Alexandria.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet2.png" alt="Vet two" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Ahmed Anwer</h4>
+                        <span>Dermatology Specialist</span>
+                        <address>Egypt, Giza.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet3.png" alt="Vet three" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Khalid Ali</h4>
+                        <span>Ophthalmology Specialist</span>
+                        <address>Egypt, Cairo.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet4.png" alt="Vet one" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Ahmed Elhewala</h4>
+                        <span>Animal Welfare Specialist</span>
+                        <address>Egypt, Menoufia.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet1.png" alt="Vet one" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Mahmoud Eldeeb</h4>
+                        <span>Emergency Specialist</span>
+                        <address>Egypt, Alexandria.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet2.png" alt="Vet two" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Ahmed Anwer</h4>
+                        <span>Dermatology Specialist</span>
+                        <address>Egypt, Giza.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet3.png" alt="Vet three" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Khalid Ali</h4>
+                        <span>Ophthalmology Specialist</span>
+                        <address>Egypt, Cairo.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="vet-box">
+                    <div class="vet-card front">
+                        <img src="assets/imgs/vet4.png" alt="Vet one" />
+                    </div>
+                    <div class="vet-card back">
+                        <h4>Ahmed Elhewala</h4>
+                        <span>Animal Welfare Specialist</span>
+                        <address>Egypt, Menoufia.</address>
+                        <address>+012 3456 789</address>
+                        <div class="vet-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#">View All Vets</a>
+        </div>
+    </section>
+    <!-- End Vets Section -->
+    <!-- Start About Us Section -->
+    <section class="about">
+        <h3 class="heading">About Us</h3>
+        <div class="container">
+            <form action="">
+                <input type="text" name="user" id="feed-user" placeholder="Enter your user name" />
+                <input type="email" name="email" id="feed-email" placeholder="Enter your email" />
+                <textarea name="feedback" id="feed-text" placeholder="Tell Us your feedback"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="details">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address>
+                        <span>Egypt, Menoufia University.</span> 
+                        <span>Department of Physics and Computer Science.</span> 
+                    </address>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <span>+012 3456 789</span>
+                        <span>+012 3456 789</span>
+                    </div>
+                </div>
+                <!-- <div class="users about-box">
+                <i class="fa-solid fa-users"></i>
+                <span>Ahmed Abdelghany</span>
+                <span>Mahmoud Eldeeb</span>
+                <span>Ahmed Anwer</span>
+                <span>Donia Ghazal</span>
+                <span>Zozo Abdallah</span>
+            </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="top">
+                <div class="end-wish">
+                    <img src="assets/imgs/Red-logo.png" alt="Cura" class="logo" />
+                    <span>We wish that we help you with what you need<i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f facebook"><a href="#"></a></i>
+                    <i class="fa-brands fa-google-plus-g google"><a href="#"></a></i>
+                    <i class="fa-brands fa-twitter twitter"><a href="#"></a></i>
+                    <i class="fa-brands fa-whatsapp whatsapp"><a href="#"></a></i>
+                    <i class="fa-brands fa-linkedin-in linkedin"><a href="#"></a></i>
+                    <i class="fa-brands fa-instagram instagram"><a href="#"></a></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <span>Cura<i class="fa-solid fa-heart"></i></span> 2022 &copy; Copyright. All Rights &reg; is reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/pages/login.js"></script>
+    <script src="js/layouts/layout.js" type="module"></script>
+    <script src="js/pages/login.js" type="module"></script>
+</body>
+
+</html>

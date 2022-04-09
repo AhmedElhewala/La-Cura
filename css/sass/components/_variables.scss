@@ -1,0 +1,16 @@
+:root {
+    --dark-color: #231F20;
+    --light-color: #efefef;
+    --option-color: #c82222;
+    --secondray-background: #222;
+    --theme-background: #333;
+    --theme-color: #fff;
+    --section-padding: 80px;
+}
+
+$mobile: "(max-width: 480px)";
+$tablet: "(max-width: 767px)";
+$small: "(min-width: 768px)";
+$medium: "(min-width: 992px)";
+$large: "(min-width: 1200px)";
+$transition: 0.3s;

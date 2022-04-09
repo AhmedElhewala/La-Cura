@@ -1,0 +1,81 @@
+/* Start Option Box */
+
+.option {
+    width: 200px;
+    padding: 30px 20px;
+    height: 20Vh;
+    position: fixed;
+    top: 30%;
+    right: -205px;
+    background-color: var(--dark-color);
+    @include transtime(0.3s);
+    z-index: 5555;
+    -webkit-box-shadow: 0 0 5px 0 var(--light-color);
+    -moz-box-shadow: 0 0 5px 0 var(--light-color);
+    -o-box-shadow: 0 0 5px 0 var(--light-color);
+    -ms-box-shadow: 0 0 5px 0 var(--light-color);
+    box-shadow: 0 0 5px 0 var(--light-color);
+    @include tabletview {
+        padding: 20px 10px;
+    }
+    &.open {
+        right: 0;
+    }
+    >.option-icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -50px;
+        bottom: 0;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        cursor: pointer;
+        @include transtime(0.3s);
+        font: {
+            size: 20px;
+        }
+        -webkit-box-shadow: 0 0 5px 0 var(--light-color);
+        -moz-box-shadow: 0 0 5px 0 var(--light-color);
+        -o-box-shadow: 0 0 5px 0 var(--light-color);
+        -ms-box-shadow: 0 0 5px 0 var(--light-color);
+        box-shadow: 0 0 5px 0 var(--light-color);
+    }
+    .option-box {
+        width: 100%;
+        span {
+            display: block;
+            color: var(--light-color);
+            margin-bottom: 10px;
+        }
+        ul {
+            width: 100%;
+            padding: 0;
+            &.color {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    width: 25px;
+                    height: 25px;
+                    background-color: #000;
+                    border: 0.5px solid #efefef;
+                    @include circleborder(5px);
+                    cursor: pointer;
+                    opacity: 0.5;
+                    @include transtime(0.3s);
+                    &.active,
+                    &:hover {
+                        opacity: 1;
+                        border-width: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* End Option Box */

@@ -1,0 +1,81 @@
+@mixin mobileview {
+    @media #{$mobile} {
+        @content;
+    }
+}
+
+@mixin tabletview {
+    @media #{$tablet} {
+        @content;
+    }
+}
+
+@mixin smallview {
+    @media #{$small} {
+        @content;
+    }
+}
+
+@mixin mediumview {
+    @media #{$medium} {
+        @content;
+    }
+}
+
+@mixin largeview {
+    @media #{$large} {
+        @content;
+    }
+}
+
+@mixin transtime($time) {
+    transition: $time;
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -ms-transition: $time;
+    -o-transition: $time;
+}
+
+@mixin circleborder($degree) {
+    border-radius: $degree;
+    -webkit-border-radius: $degree;
+    -moz-border-radius: $degree;
+    -ms-border-radius: $degree;
+    -o-border-radius: $degree;
+}
+
+@mixin megamenu {
+    position: absolute;
+    width: 200%;
+    background-color: var(--light-color);
+    left: 0;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    z-index: 66666;
+    @include tabletview {
+        width: 100%;
+    }
+    li {
+        padding: 10px 20px;
+        flex-basis: 100%;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        &:hover {
+            padding: 10px 30px;
+            >a {
+                color: var(--dark-color);
+            }
+        }
+    }
+    a {
+        width: 100%;
+        color: var(--dark-color);
+    }
+}
