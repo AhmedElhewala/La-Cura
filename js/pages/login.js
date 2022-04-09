@@ -47,7 +47,7 @@ setInterval(function() {
     if (imgIndex === 9) {
         imgIndex = 0;
     }
-    landing.style.backgroundImage = `url("../../assets/imgs/${sliderImgs[imgIndex]}")`;
+    landing.style.backgroundImage = `url("assets/imgs/${sliderImgs[imgIndex]}")`;
     imgIndex++;
 }, 3000);
 // click on a color option
