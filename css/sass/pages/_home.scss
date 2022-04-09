@@ -103,10 +103,10 @@ main {
     .container {
         opacity: 0;
         text-align: center;
-        @include transtime(0.3s);
-        &.reached {
-            opacity: 1;
-        }
+        // @include transtime(0.3s);
+        // &.reached {
+        //     opacity: 1;
+        // }
         img {
             max-width: 25%;
             filter: drop-shadow(0 0 2px var(--option-color));
