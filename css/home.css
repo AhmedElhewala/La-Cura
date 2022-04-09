@@ -1207,7 +1207,6 @@ main {
   overflow: hidden;
 }
 main .container {
-  opacity: 0;
   text-align: center;
 }
 main .container img {
